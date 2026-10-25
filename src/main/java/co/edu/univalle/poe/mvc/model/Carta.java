@@ -1,24 +1,32 @@
 package co.edu.univalle.poe.mvc.model;
 
 public class Carta {
-    private final String palo;
-    private final int valor;
+    private final Palo palo;
+    private final Valor valor;
 
-    public Carta(String palo, int valor) {
+    public Carta(Palo palo, Valor valor) {
         this.valor = valor;
         this.palo = palo;
     }
 
-    public String getPalo() {
+    public Palo getPalo() {
         return palo;
     }
 
-    public int getValor() {
+    public Valor getValor() {
         return valor;
     }
 
-    public String valorBase() {
-        return valor + " _ " + palo.name();
+    public int getValorBase() {
+        return valor.getValorBase();
+    }
+    public String getNombreImagen() {
+        return valor.getEtiqueta() + "_" + palo.name() + ".png";
+    }
+
+    @Override
+    public String toString() {
+        return valor.getEtiqueta() + "de" + palo.getNombre();
     }
 
 }

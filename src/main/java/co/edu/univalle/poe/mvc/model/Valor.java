@@ -32,5 +32,7 @@ public enum Valor {
     }
 
 
-
+    public int getValorBase() {
+        return valor;
+    }
 }

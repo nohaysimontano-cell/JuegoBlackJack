@@ -17,8 +17,16 @@ public class Carta {
         return valor;
     }
 
-    public String valorBase() {
-        return valor + " _ " + palo.name();
+    public int getValorBase() {
+        return valor.getValorBase();
     }
 
+    public String getNombreImagen() {
+        return valor.getEtiqueta() + "_" + palo.name() + ".png";
+    }
+
+    @Override
+    public String toString() {
+        return valor.getValorBase() + " de " + palo.getNombre();
+    }
 }

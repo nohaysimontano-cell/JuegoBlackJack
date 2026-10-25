@@ -16,23 +16,21 @@ public enum Valor {
     REY("K", 10);
 
     private final String etiqueta;
-    private final int valor;
+    private final int valorBase;
 
-    Valor(String etiqueta, int valor) {
+    Valor(String etiqueta, int valorBase) {
         this.etiqueta = etiqueta;
-        this.valor = valor;
+        this.valorBase = valorBase;
     }
 
     public String getEtiqueta() {
         return etiqueta;
     }
 
-    public int getValor() {
-        return valor;
-    }
-
-
     public int getValorBase() {
-        return valor;
+        return valorBase;
     }
+
+
+    
 }

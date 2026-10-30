@@ -89,6 +89,6 @@ public class Mano {
 
     public boolean esVeinteYMedio() {
         return cantidad == 2 && calcularPuntaje() == 14;
-    }
+    } 
 
 }

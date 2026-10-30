@@ -6,4 +6,4 @@ public enum Resultado {
     VICTORIA,
     VICTORIA_BLACJACK;
 
-}
+} 

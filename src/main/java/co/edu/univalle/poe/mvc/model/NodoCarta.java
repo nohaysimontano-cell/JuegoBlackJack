@@ -22,4 +22,4 @@ public class NodoCarta {
     public void setSiguiente(NodoCarta siguiente) {
         this.siguiente = siguiente;
     }
-}
+} 

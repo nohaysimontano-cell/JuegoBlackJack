@@ -4,7 +4,7 @@ public enum Palo {
 
     DIAMANTES("Diamantes"),
     CORAZONES("Corazones"),
-    TREBOL("Treboles"),
+    TREBOLES("Treboles"),
     PICAS("Picas");
 
     private final String nombre;

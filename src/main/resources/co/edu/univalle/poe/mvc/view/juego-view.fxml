@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" spacing="12.0"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="co.edu.univalle.poe.mvc.controller.JuegoController">
+
+    <padding>
+        <Insets top="15.0" right="20.0" bottom="15.0" left="20.0"/>
+    </padding>
+
+    <!-- Mensaje de estado -->
+    <Label fx:id="lblMensaje" text="Ingresa una apuesta para comenzar."/>
+
+    <!-- Zona del computador -->
+    <VBox alignment="CENTER" spacing="6.0">
+        <Label text="COMPUTADOR"/>
+        <HBox fx:id="boxCartasMaquina" alignment="CENTER" spacing="8.0" minHeight="170.0"/>
+        <Label fx:id="lblPuntajeMaquina" text="Puntaje: -"/>
+    </VBox>
+
+    <!-- Zona del jugador -->
+    <VBox alignment="CENTER" spacing="6.0">
+        <Label text="JUGADOR"/>
+        <HBox fx:id="boxCartasJugador" alignment="CENTER" spacing="8.0" minHeight="170.0"/>
+        <Label fx:id="lblPuntajeJugador" text="Puntaje: -"/>
+    </VBox>
+
+    <!-- Saldo y apuesta vigente -->
+    <HBox alignment="CENTER" spacing="30.0">
+        <Label fx:id="lblSaldo" text="Saldo: 1000"/>
+        <Label fx:id="lblApuesta" text="Apuesta vigente: -"/>
+    </HBox>
+
+    <!-- Campo de apuesta -->
+    <HBox alignment="CENTER" spacing="8.0">
+        <Label text="Apuesta:"/>
+        <TextField fx:id="txtApuesta" promptText="Múltiplo de 10" prefWidth="160.0"/>
+    </HBox>
+
+    <!-- Botones -->
+    <HBox alignment="CENTER" spacing="10.0">
+        <Button fx:id="btnIniciar" text="Iniciar ronda" onAction="#iniciarRonda"/>
+        <Button fx:id="btnPedir" text="Pedir carta" onAction="#pedirCarta"/>
+        <Button fx:id="btnPlantarse" text="Plantarse" onAction="#plantarse"/>
+        <Button fx:id="btnReglas" text="Ver reglas"/>
+        <Button fx:id="btnCerrar" text="Cerrar juego"/>
+    </HBox>
+
+</VBox>

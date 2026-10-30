@@ -33,6 +33,14 @@ public class Mazo {
         siguienteCarta = 0;
     } 
 
+    public Mazo(Carta[] cartasOrdenadas) {
+        if (cartasOrdenadas == null || cartasOrdenadas.length != TOTAL_CARTAS) {
+            throw new IllegalArgumentException("El mazo debe tener exactamente 52 cartas");
+        }
+        this.cartas = cartasOrdenadas;
+        this.siguienteCarta = 0;
+    }
+
     public Carta repartirCarta() {
         if (siguienteCarta >=cartas.length) {
             throw new IllegalStateException("No quedan cartas en el mazo.");

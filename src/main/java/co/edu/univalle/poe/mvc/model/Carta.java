@@ -1,8 +1,8 @@
 package co.edu.univalle.poe.mvc.model;
 
 public class Carta {
-    private final Palo palo;
-    private final Valor valor;
+    private  Palo palo;
+    private  Valor valor;
 
     public Carta(Palo palo, Valor valor) {
         this.valor = valor;
@@ -27,6 +27,6 @@ public class Carta {
 
     @Override
     public String toString() {
-        return valor.getValorBase() + " de " + palo.getNombre();
+        return valor.getEtiqueta() + " de " + palo.getNombre();
     }
 }

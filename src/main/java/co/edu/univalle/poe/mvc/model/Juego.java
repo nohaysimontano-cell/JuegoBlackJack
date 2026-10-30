@@ -215,6 +215,6 @@ public class Juego {
         jugador.pagarApuesta(pago);
 
         estado = EstadoJuego.RONDA_TERMINADA;
-    }
+    } 
 }
 

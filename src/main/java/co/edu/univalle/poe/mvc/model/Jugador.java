@@ -66,5 +66,5 @@ public class Jugador extends Participante {
 
     public void vaciarApuesta() {
         apuesta = 0;
-    }
+    } 
 }

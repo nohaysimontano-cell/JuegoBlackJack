@@ -16,4 +16,4 @@ public enum Palo {
     public String getNombre() {
         return nombre;
     }
-}
+} 

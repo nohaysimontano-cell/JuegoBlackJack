@@ -5,4 +5,4 @@ public enum EstadoJuego {
     TURNO_JUGADOR,
     TURNO_MAQUINA,
     RONDA_TERMINADA;
-}
+} 

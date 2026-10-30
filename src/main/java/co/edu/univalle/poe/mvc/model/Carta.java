@@ -28,5 +28,5 @@ public class Carta {
     @Override
     public String toString() {
         return valor.getEtiqueta() + " de " + palo.getNombre();
-    }
+    } 
 }

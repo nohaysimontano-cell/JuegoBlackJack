@@ -54,4 +54,4 @@ public class Mazo {
         return cartas.length - siguienteCarta;
     }
 
-}
+} 
